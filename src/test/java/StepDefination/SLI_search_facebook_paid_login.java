@@ -90,7 +90,9 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		Thread.sleep(3000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
-		search_field.sendKeys("Software");
+		search_field.sendKeys("soft");
+		Thread.sleep(1000);
+		search_field.sendKeys("ware");
 		Thread.sleep(3000);
 	}
 
