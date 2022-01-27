@@ -31,10 +31,11 @@ public class Google_free_login extends BaseClass {
 	}
 
 	@Then("user click on the Free PPts under free stuffiiv$")
-	public void user_click_on_the_free_p_pts_under_free_stuffiiv() {
+	public void user_click_on_the_free_p_pts_under_free_stuffiiv() throws InterruptedException {
 		try {
 			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 		}
 	}
