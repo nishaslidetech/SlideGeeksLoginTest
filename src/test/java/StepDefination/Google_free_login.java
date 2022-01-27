@@ -141,7 +141,7 @@ public class Google_free_login extends BaseClass {
 
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
-			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_ppt.click();
 			Thread.sleep(3000);
 
