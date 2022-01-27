@@ -137,21 +137,24 @@ public class SLI_search_google_paid_login extends BaseClass {
 		Thread.sleep(4000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
-		search_field.sendKeys("Management");
+		search_field.sendKeys("Mana");
+		Thread.sleep(1000);
+		search_field.sendKeys("gement");
 		Thread.sleep(3000);
 	}
 
 	@Then("user selects and download the PPT_viii$")
 	public void user_selects_and_download_the_ppt_viii() throws Throwable {
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(By
-					.xpath("//div[@class='sli_ac_product sli_rac_first sli_ac_active']//img[@class='sli_ac_image']")));
+			WebElement select_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[@class='productList']//div[1]//a[1]//div[1]//img[1]")));
 			select_ppt.click();
+			Thread.sleep(3000);
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-			download_Ppt.click();
-			Thread.sleep(3000);
+			js.executeScript("arguments[0].click();", download_Ppt);
+
 		} catch (NoSuchElementException e) {
 
 		}
@@ -167,7 +170,6 @@ public class SLI_search_google_paid_login extends BaseClass {
 		} catch (NoSuchElementException e) {
 
 		}
-
 	}
 
 }
