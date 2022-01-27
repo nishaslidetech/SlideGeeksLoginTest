@@ -63,67 +63,56 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user enters the username and passwordiii$")
 	public void user_enters_the_username_and_passwordiii() throws Throwable {
-		try {
+		
+		 driver.manage().window().maximize();
+			
+		 // Store the CurrentWindow for future reference
+		// String handle = " ";
+		String currentWindow = driver.getWindowHandle();
+		String popupWindowHandle = null;
 
-			driver.manage().window().maximize();
+		// Switch To Popup Window
 
-			// Store the CurrentWindow for future reference
-			// String handle = " ";
-			String currentWindow = driver.getWindowHandle();
-			String popupWindowHandle = null;
+		for (String handle : driver.getWindowHandles()) {
+			if (!handle.equals(currentWindow)) {
 
-			// Switch To Popup Window
+				popupWindowHandle = handle;
+				driver.switchTo().window(popupWindowHandle);
+				driver.manage().window().maximize();
 
-			for (String handle : driver.getWindowHandles()) {
-				if (!handle.equals(currentWindow)) {
+				Thread.sleep(5000);
 
-					popupWindowHandle = handle;
-					driver.switchTo().window(popupWindowHandle);
-					driver.manage().window().maximize();
+				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				Thread.sleep(3000);
+				g_email.sendKeys("nisha.dhiman@slidetech.in");
+				Thread.sleep(3000);
 
-					Thread.sleep(3000);
+				WebElement g_login_btn1 = wait.until(ExpectedConditions
+						.elementToBeClickable(By.cssSelector("#identifierNext > div > button > span")));
+				Thread.sleep(3000);
+				g_login_btn1.click();
 
-					if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-						WebElement another_btn = BaseClass
-								.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
-						another_btn.click();
-					}
+				Thread.sleep(3000);
 
-					WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
+				Thread.sleep(3000);
+				g_pass.sendKeys("Nisha@123");
 
-					g_email.sendKeys("nisha.dhiman@slidetech.in");
-					Thread.sleep(3000);
+				Thread.sleep(3000);
+				WebElement g_login_btn2 = wait.until(
+						ExpectedConditions.elementToBeClickable(By.cssSelector("#passwordNext > div > button > span")));
+				Thread.sleep(3000);
+				g_login_btn2.click();
 
-					WebElement g_login_btn1 = wait.until(ExpectedConditions
-							.elementToBeClickable(By.cssSelector("#identifierNext > div > button > span")));
-
-					g_login_btn1.click();
-
-					Thread.sleep(2000);
-
-					WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
-
-					g_pass.sendKeys("Nisha@123");
-
-					Thread.sleep(2000);
-					WebElement g_login_btn2 = wait.until(ExpectedConditions
-							.elementToBeClickable(By.cssSelector("#passwordNext > div > button > span")));
-
-					g_login_btn2.click();
-
-					Thread.sleep(5000);
-
-				}
+				Thread.sleep(3000);
 			}
-			driver.switchTo().window(currentWindow);
-			Thread.sleep(4000);
-
-		} catch (NoSuchElementException e) {
-
 		}
+		driver.switchTo().window(currentWindow);
+		Thread.sleep(4000);
 	}
+	
 
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {

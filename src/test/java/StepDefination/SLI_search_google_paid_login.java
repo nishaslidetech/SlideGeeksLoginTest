@@ -62,8 +62,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 
 	@Then("user enters the username and password_viii$")
 	public void user_enters_the_username_and_password_viii() throws Throwable {
-		try {
-
+		
 			driver.manage().window().maximize();
 
 			// Store the CurrentWindow for future reference
@@ -112,15 +111,12 @@ public class SLI_search_google_paid_login extends BaseClass {
 					Thread.sleep(3000);
 					g_login_btn2.click();
 
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 				}
 			}
 			driver.switchTo().window(currentWindow);
-			Thread.sleep(4000);
-		} catch (NoSuchElementException e) {
-
-		}
-	}
+			Thread.sleep(5000);
+		} 
 
 	@Then("user verify the page_viii$")
 	public void user_verify_the_page_viii() {

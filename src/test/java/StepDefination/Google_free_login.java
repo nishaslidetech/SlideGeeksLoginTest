@@ -70,8 +70,7 @@ public class Google_free_login extends BaseClass {
 
 	@Then("user Enters the free username and passwordiiv$")
 	public void user_Enters_the_free_username_and_passwordiiv() throws Throwable {
-		try {
-
+		
 			driver.manage().window().maximize();
 
 			// Store the CurrentWindow for future reference
@@ -125,10 +124,8 @@ public class Google_free_login extends BaseClass {
 			}
 			driver.switchTo().window(currentWindow);
 			Thread.sleep(4000);
-		} catch (NoSuchElementException e) {
-
 		}
-	}
+	
 
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {

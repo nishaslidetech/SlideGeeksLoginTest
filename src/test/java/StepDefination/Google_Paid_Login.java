@@ -39,7 +39,7 @@ public class Google_Paid_Login extends BaseClass {
 
 	@Given("user enters the Username and Passwordv$")
 	public void user_enters_the_username_and_passwordv() throws InterruptedException {
-		try {
+		
 
 			driver.manage().window().maximize();
 
@@ -94,9 +94,7 @@ public class Google_Paid_Login extends BaseClass {
 			}
 			driver.switchTo().window(currentWindow);
 			Thread.sleep(4000);
-		} catch (NoSuchElementException e) {
-
-		}
+		
 	}
 
 	@Then("user clicks on Login button and verify the pagev$")
