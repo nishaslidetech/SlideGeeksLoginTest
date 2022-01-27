@@ -72,7 +72,7 @@ public class BaseClass {
 			driver.manage().window().maximize();
 
 			driver.get(AppURL);
-			driver.manage().timeouts().implicitlyWait(9000, TimeUnit.MILLISECONDS);
+			driver.manage().timeouts().implicitlyWait(30000, TimeUnit.MILLISECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			/*
 			 * Set<Cookie> cookiesList = driver.manage().getCookies(); for(Cookie getcookies
