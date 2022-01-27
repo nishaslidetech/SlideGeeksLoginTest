@@ -63,9 +63,9 @@ public class BaseClass {
 			// options.setExperimentalOption("excludeSwitches",
 			// Collections.singletonList("enable-automation"));
 
-			options.addArguments("--incognito"); // DesiredCapabilities object
-			DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
-			c.setCapability(ChromeOptions.CAPABILITY, options);
+			//options.addArguments("--incognito"); // DesiredCapabilities object
+			//DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
+			//c.setCapability(ChromeOptions.CAPABILITY, options);
 
 			driver = new ChromeDriver(options);
 
