@@ -142,7 +142,7 @@ public class Google_free_login extends BaseClass {
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
-			download_ppt.click();
+			download_Ppt.click();
 			Thread.sleep(3000);
 
 			if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
