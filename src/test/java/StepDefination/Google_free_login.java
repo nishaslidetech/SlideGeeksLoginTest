@@ -98,52 +98,46 @@ public class Google_free_login extends BaseClass {
 
 					WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
-					Thread.sleep(3000);
 					g_email.sendKeys("nisha.dhiman@slidetech.in");
 					Thread.sleep(3000);
 
 					WebElement g_login_btn1 = wait.until(ExpectedConditions
 							.elementToBeClickable(By.cssSelector("#identifierNext > div > button > span")));
-					Thread.sleep(3000);
 					g_login_btn1.click();
 
 					Thread.sleep(3000);
 
 					WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
-					Thread.sleep(3000);
+					
 					g_pass.sendKeys("Nisha@123");
 
 					Thread.sleep(3000);
 					WebElement g_login_btn2 = wait.until(ExpectedConditions
 							.elementToBeClickable(By.cssSelector("#passwordNext > div > button > span")));
-					Thread.sleep(3000);
 					g_login_btn2.click();
 
-					Thread.sleep(3000);
+					Thread.sleep(5000);
 				}
 			}
 			driver.switchTo().window(currentWindow);
-			Thread.sleep(4000);
+			Thread.sleep(3000);
 		}
 	
 
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
 		try {
-			/*
-			 * WebElement free_Slides =
-			 * wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")
-			 * )); free_Slides.click();
-			 * 
-			 * WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-			 * By.
-			 * xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]"
-			 * ))); js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-			 * select_ppt.click();
-			 */
-			Thread.sleep(8000);
-			driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
+			Thread.sleep(5000);
+			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
+			free_Slides.click();
+
+			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
+			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
+			select_ppt.click();
+			
+			//driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
