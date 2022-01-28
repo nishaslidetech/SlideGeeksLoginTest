@@ -33,6 +33,7 @@ public class Google_free_login extends BaseClass {
 	@Then("user click on the Free PPts under free stuffiiv$")
 	public void user_click_on_the_free_p_pts_under_free_stuffiiv() throws InterruptedException {
 		try {
+			Thread.sleep(3000);
 			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
 			Thread.sleep(3000);
@@ -131,13 +132,15 @@ public class Google_free_login extends BaseClass {
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
 		try {
-			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
+			/*WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
 
 			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
 					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-			select_ppt.click();
+			select_ppt.click();*/
+			Thread.sleep(4000);
+			driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
 
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
