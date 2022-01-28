@@ -88,7 +88,7 @@ public class Facebook_Paid_Login extends BaseClass {
 			}
 		}
 		driver.switchTo().window(currentWindow);
-		Thread.sleep(6000);
+		Thread.sleep(5000);
 	}
 
 	@Then("user downloads the popular PPTiv")

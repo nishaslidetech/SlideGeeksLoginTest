@@ -63,10 +63,10 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user enters the username and passwordiii$")
 	public void user_enters_the_username_and_passwordiii() throws Throwable {
-		
-		 driver.manage().window().maximize();
-			
-		 // Store the CurrentWindow for future reference
+
+		driver.manage().window().maximize();
+
+		// Store the CurrentWindow for future reference
 		// String handle = " ";
 		String currentWindow = driver.getWindowHandle();
 		String popupWindowHandle = null;
@@ -112,7 +112,6 @@ public class Google_existing_paid_login extends BaseClass {
 		driver.switchTo().window(currentWindow);
 		Thread.sleep(4000);
 	}
-	
 
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {
@@ -127,8 +126,7 @@ public class Google_existing_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
-			WebElement download_Ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
+			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			Thread.sleep(2000);

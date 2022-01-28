@@ -116,7 +116,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 
 	@Then("user downloads the PPTi$")
 	public void user_downloads_the_ppti() throws Throwable {
-		Thread.sleep(7000);
+		Thread.sleep(4000);
 		driver.get(
 				"https://www.slidegeeks.com/business/product/emerging-marketplace-strategies-growth-ppt-powerpoint-presentation-complete-deck");
 		WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));

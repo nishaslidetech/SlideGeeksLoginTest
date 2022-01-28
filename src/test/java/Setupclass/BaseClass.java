@@ -63,10 +63,6 @@ public class BaseClass {
 			// options.setExperimentalOption("excludeSwitches",
 			// Collections.singletonList("enable-automation"));
 
-			options.addArguments("--incognito"); // DesiredCapabilities object
-			DesiredCapabilities c = DesiredCapabilities.chrome(); // set capability to
-			c.setCapability(ChromeOptions.CAPABILITY, options);
-
 			driver = new ChromeDriver(options);
 
 			driver.manage().window().maximize();
@@ -151,7 +147,7 @@ public class BaseClass {
 		Thread.sleep(2000);
 
 		if (driver != null) {
-			driver.quit(); // ->> don't want to close the browser
+		//	driver.quit(); // ->> don't want to close the browser
 			Thread.sleep(2000);
 		}
 	}

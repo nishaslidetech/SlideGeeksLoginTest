@@ -18,10 +18,9 @@ import cucumber.api.java.en.Then;
 
 public class Google_free_login extends BaseClass {
 
-	@Given("User is home pageiiv$")
+	@Given("^User is home pageiiv$")
 	public void user_is_home_pageiiv() throws Throwable {
 		BaseClass.ClearGoggleCache();
-		BaseClass.ClearBrowserCache();
 		driver.get(AppURL);
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
@@ -31,10 +30,12 @@ public class Google_free_login extends BaseClass {
 	}
 
 	@Then("user click on the Free PPts under free stuffiiv$")
-	public void user_click_on_the_free_p_pts_under_free_stuffiiv() {
+	public void user_click_on_the_free_p_pts_under_free_stuffiiv() throws InterruptedException {
 		try {
+			Thread.sleep(3000);
 			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
+			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 		}
 	}
@@ -130,18 +131,23 @@ public class Google_free_login extends BaseClass {
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
 		try {
-			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
-			free_Slides.click();
-
-			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
-			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-			select_ppt.click();
-
-			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
-			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-			download_ppt.click();
+			/*
+			 * WebElement free_Slides =
+			 * wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")
+			 * )); free_Slides.click();
+			 * 
+			 * WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+			 * By.
+			 * xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]"
+			 * ))); js.executeScript("arguments[0].scrollIntoView();", select_ppt);
+			 * select_ppt.click();
+			 */
+			Thread.sleep(4000);
+			driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
+			WebElement download_Ppt = wait
+					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
+			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
+			download_Ppt.click();
 			Thread.sleep(3000);
 
 			if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {
