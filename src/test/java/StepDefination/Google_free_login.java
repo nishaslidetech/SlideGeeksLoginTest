@@ -142,7 +142,7 @@ public class Google_free_login extends BaseClass {
 			 * ))); js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			 * select_ppt.click();
 			 */
-			Thread.sleep(4000);
+			Thread.sleep(8000);
 			driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
