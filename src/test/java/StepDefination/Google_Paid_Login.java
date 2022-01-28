@@ -67,7 +67,7 @@ public class Google_Paid_Login extends BaseClass {
 				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
 				Thread.sleep(3000);
-				g_email.sendKeys("nisha.dhiman@slidetech.in");
+				g_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(3000);
 
 				WebElement g_login_btn1 = wait.until(ExpectedConditions
@@ -80,7 +80,7 @@ public class Google_Paid_Login extends BaseClass {
 				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
 						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
 				Thread.sleep(3000);
-				g_pass.sendKeys("Nisha@123");
+				g_pass.sendKeys("Himanshi@123");
 
 				Thread.sleep(3000);
 				WebElement g_login_btn2 = wait.until(
