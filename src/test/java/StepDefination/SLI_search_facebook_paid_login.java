@@ -87,12 +87,10 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 	@Then("enter keyword in search field_vii$")
 	public void enter_keyword_in_search_field_vii() throws Throwable {
-		Thread.sleep(4000);
+		Thread.sleep(8000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
 		search_field.sendKeys("software");
-		Thread.sleep(1000);
-		//search_field.sendKeys("ware");
 		Thread.sleep(3000);
 	}
 
