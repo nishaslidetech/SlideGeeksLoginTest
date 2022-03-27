@@ -69,7 +69,7 @@ public class Google_free_login extends BaseClass {
 		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
 		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//form[@id='site_signup_form']//img[@id='google-signin-btn']")));
+				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[2]")));
 
 		js.executeScript("arguments[0].click();", sign_in_with_Google);
 	}
