@@ -66,14 +66,27 @@ public class Normal_paid_login extends BaseClass {
 	@Then("user enters the username and password_vi$")
 	public void user_enters_the_username_and_password_vi() throws Throwable {
 		try {
-			WebElement email = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='E-mail Address']")));
-			email.sendKeys("sumit.kumar@slidetech.in");
+			WebElement existingUser = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", existingUser);
+		Thread.sleep(2000);
+			
+		WebElement email_Address = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_email']")));
+		Thread.sleep(2000);
+		email_Address.clear();
+		email_Address.sendKeys("sumit.kumar@slidetech.in");
+			
+		WebElement password = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_password']")));
+		password.clear();
+		password.sendKeys("redhat2090");
 
-			WebElement password_field = wait
-					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Password']")));
-			password_field.sendKeys("redhat2090");
-			Thread.sleep(2000);
+		WebElement login = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//button[@id = 'site_signin_btn']")));
+		login.click();
+		Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}
