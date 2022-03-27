@@ -64,7 +64,7 @@ public class Google_existing_paid_login extends BaseClass {
 				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[2]")));
                 Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", sign_in_with_Google);;
-
+                Thread.sleep(3000);
 	}
 
 	@Then("user enters the username and passwordiii$")
