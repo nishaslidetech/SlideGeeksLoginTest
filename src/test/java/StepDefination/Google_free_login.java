@@ -63,10 +63,15 @@ public class Google_free_login extends BaseClass {
 	public void user_is_on_home_page_page_and_click_on_google_buttoniiv() throws Throwable {
 		// Click on Sign in with Google Account
 		//Thread.sleep(3000);
-		WebElement Sign_in_with_google = wait.until(
-				ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
+		WebElement existingUser = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
+
+		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
-		Sign_in_with_google.click();
+		WebElement sign_in_with_Google = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//form[@id='site_signup_form']//img[@id='google-signin-btn']")));
+
+		js.executeScript("arguments[0].click();", sign_in_with_Google);
 	}
 
 	@Then("user Enters the free username and passwordiiv$")
