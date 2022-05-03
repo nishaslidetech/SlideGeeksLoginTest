@@ -61,7 +61,7 @@ public class Google_existing_paid_login extends BaseClass {
 		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
 		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[2]//img")));
+				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
                 Thread.sleep(2000);
 		js.executeScript("arguments[0].click();", sign_in_with_Google);;
                 Thread.sleep(3000);
