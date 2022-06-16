@@ -61,13 +61,19 @@ public class Facebook_free_login extends BaseClass {
 		// Thread.sleep(3000);
 		try {
 			
-		WebElement existingUser = wait
+		/*WebElement existingUser = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
 
 		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
 		WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
 				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[1]")));
+		Thread.sleep(2000);
+		sign_in_with_Facebook.click();*/
+			
+		// without pop-up
+		WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
+				.elementToBeClickable(By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']	")));
 		Thread.sleep(2000);
 		sign_in_with_Facebook.click();
 	
