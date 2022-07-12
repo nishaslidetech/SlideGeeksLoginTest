@@ -2,15 +2,14 @@ package StepDefination;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -54,7 +53,7 @@ public class Facebook_Paid_Login extends BaseClass {
 
 				popupWindowHandle = handle;
 				driver.switchTo().window(popupWindowHandle);
-				//driver.manage().window().maximize();
+				// driver.manage().window().maximize();
 
 				Thread.sleep(4000);
 
@@ -94,10 +93,11 @@ public class Facebook_Paid_Login extends BaseClass {
 	@Then("user downloads the popular PPTiv")
 	public void user_downloads_the_popular_ppiv() throws InterruptedException {
 		try {
-			
+
 			System.out.println("user will download the ppt");
 
-			WebElement most_popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
+			WebElement most_popular_Ppts = wait
+					.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
 			most_popular_Ppts.click();
 
 			WebElement select_PPt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(

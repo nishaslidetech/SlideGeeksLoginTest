@@ -2,15 +2,14 @@ package StepDefination;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 public class SLI_search_facebook_paid_login extends BaseClass {
 
@@ -49,7 +48,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 				popupWindowHandle = handle;
 				driver.switchTo().window(popupWindowHandle);
-				//driver.manage().window().maximize();
+				// driver.manage().window().maximize();
 
 				Thread.sleep(4000);
 
@@ -97,8 +96,8 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 	@Then("user selects and download the PPT_vii$")
 	public void user_selects_and_download_the_ppt() throws InterruptedException {
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//div[@class='productList']//div[1]//a[1]//div[1]//img[1]")));
+			WebElement select_ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[@class='productList']//div[1]//a[1]//div[1]//img[1]")));
 			js.executeScript("arguments[0].click();", select_ppt);
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
@@ -114,14 +113,13 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 	public void user_clicks_on_the_logout_page_vii() throws Throwable {
 		try {
 			Thread.sleep(4000);
-			WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Logout']")));
+			WebElement logout = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Logout']")));
 			js.executeScript("arguments[0].click();", logout);
 		} catch (NoSuchElementException e) {
 
 		}
 
 	}
-
-
 
 }

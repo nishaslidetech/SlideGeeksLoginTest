@@ -5,15 +5,14 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -127,10 +126,11 @@ public class SLI_search_google_paid_login extends BaseClass {
 		 * "//h3[@class='base']"))) .getText(); System.out.println("subscriptionText = "
 		 * + subscriptionText);
 		 * 
-		 * //Assert.
+		 * // Assert.
 		 * assertTrue("user is not on the subscription page after login with facebbok paid credentials"
-		 * ,subscriptionText.contains(TextMessage));
-		 */ }
+		 * , subscriptionText.contains(TextMessage));
+		 */
+	}
 
 	@Then("enter Keyword in search field_viii$")
 	public void enter_Keyword_in_search_field_viii() throws Throwable {
@@ -139,7 +139,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
 		search_field.sendKeys("Management");
 		Thread.sleep(1000);
-		//search_field.sendKeys("gement");
+		// search_field.sendKeys("gement");
 		Thread.sleep(3000);
 	}
 

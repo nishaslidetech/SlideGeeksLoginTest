@@ -2,16 +2,14 @@ package StepDefination;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -62,79 +60,82 @@ public class Google_free_login extends BaseClass {
 	@Then("user is on home page page and click on google buttoniiv$")
 	public void user_is_on_home_page_page_and_click_on_google_buttoniiv() throws Throwable {
 		// Click on Sign in with Google Account
-		/*WebElement existingUser = wait
+
+		WebElement existingUser = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
 
 		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
-		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
-                Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", sign_in_with_Google);;*/
-		
-		
-		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
-                Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", sign_in_with_Google);;
-                Thread.sleep(3000);
+		WebElement sign_in_with_Google = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", sign_in_with_Google);
+		;
+
+		/*
+		 * WebElement sign_in_with_Google = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//i[@class='icon fa fa-google']"))); Thread.sleep(2000);
+		 * js.executeScript("arguments[0].click();", sign_in_with_Google);
+		 * 
+		 * Thread.sleep(3000);
+		 */
 	}
 
 	@Then("user Enters the free username and passwordiiv$")
 	public void user_Enters_the_free_username_and_passwordiiv() throws Throwable {
-		
-			driver.manage().window().maximize();
 
-			// Store the CurrentWindow for future reference
-			// String handle = " ";
-			String currentWindow = driver.getWindowHandle();
-			String popupWindowHandle = null;
+		driver.manage().window().maximize();
 
-			// Switch To Popup Window
+		// Store the CurrentWindow for future reference
+		// String handle = " ";
+		String currentWindow = driver.getWindowHandle();
+		String popupWindowHandle = null;
 
-			for (String handle : driver.getWindowHandles()) {
-				if (!handle.equals(currentWindow)) {
+		// Switch To Popup Window
 
-					popupWindowHandle = handle;
-					driver.switchTo().window(popupWindowHandle);
-					driver.manage().window().maximize();
+		for (String handle : driver.getWindowHandles()) {
+			if (!handle.equals(currentWindow)) {
 
-					Thread.sleep(5000);
-					
-					if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
-						WebElement another_btn = BaseClass
-								.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
-						another_btn.click();
-					}
+				popupWindowHandle = handle;
+				driver.switchTo().window(popupWindowHandle);
+				driver.manage().window().maximize();
 
-					WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
-					g_email.sendKeys("slidetech.qa@gmail.com");
-					Thread.sleep(3000);
+				Thread.sleep(5000);
 
-					WebElement g_login_btn1 = wait.until(ExpectedConditions
-							.elementToBeClickable(By.cssSelector("#identifierNext > div > button > span")));
-					g_login_btn1.click();
-
-					Thread.sleep(3000);
-
-					WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-							"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
-					
-					g_pass.sendKeys("Himanshi@123");
-
-					Thread.sleep(3000);
-					WebElement g_login_btn2 = wait.until(ExpectedConditions
-							.elementToBeClickable(By.cssSelector("#passwordNext > div > button > span")));
-					g_login_btn2.click();
-
-					Thread.sleep(5000);
+				if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
+					WebElement another_btn = BaseClass
+							.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
+					another_btn.click();
 				}
+
+				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				g_email.sendKeys("slidetech.qa@gmail.com");
+				Thread.sleep(3000);
+
+				WebElement g_login_btn1 = wait.until(ExpectedConditions
+						.elementToBeClickable(By.cssSelector("#identifierNext > div > button > span")));
+				g_login_btn1.click();
+
+				Thread.sleep(3000);
+
+				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
+						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
+
+				g_pass.sendKeys("Himanshi@123");
+
+				Thread.sleep(3000);
+				WebElement g_login_btn2 = wait.until(
+						ExpectedConditions.elementToBeClickable(By.cssSelector("#passwordNext > div > button > span")));
+				g_login_btn2.click();
+
+				Thread.sleep(5000);
 			}
-			driver.switchTo().window(currentWindow);
-			Thread.sleep(3000);
 		}
-	
+		driver.switchTo().window(currentWindow);
+		Thread.sleep(3000);
+	}
 
 	@Then("user downloads the free PPTiiv$")
 	public void user_downloads_the_free_pptiiv() throws Throwable {
@@ -147,8 +148,8 @@ public class Google_free_login extends BaseClass {
 					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
-			
-			//driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
+
+			// driver.get("https://www.slidegeeks.com/business/product/semi-circular-free-powerpoint-template");
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
@@ -170,7 +171,8 @@ public class Google_free_login extends BaseClass {
 	public void user_clicks_on_the_logout_pageiiv() throws Throwable {
 		try {
 			Thread.sleep(4000);
-			WebElement logout = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Logout']")));
+			WebElement logout = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Logout']")));
 			js.executeScript("arguments[0].click();", logout);
 		} catch (NoSuchElementException e) {
 

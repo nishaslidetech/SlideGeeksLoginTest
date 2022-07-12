@@ -91,7 +91,6 @@ public class BaseClass {
 		else if ((local_FFbrowser.equals("yes"))) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			// driver.get(AppURL);
 			driver.manage().window().maximize();
 			wait = new WebDriverWait(driver, 30);
 			js = (JavascriptExecutor) driver;

@@ -1,13 +1,15 @@
 package StepDefination;
 
 import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -60,25 +62,26 @@ public class Facebook_free_login extends BaseClass {
 	public void user_is_on_home_page_page_and_click_on_facebbook_button_ii() throws InterruptedException {
 		// Thread.sleep(3000);
 		try {
-			
-		/*WebElement existingUser = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
 
-		js.executeScript("arguments[0].click();", existingUser);
-		Thread.sleep(2000);
-		WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[1]")));
-		Thread.sleep(2000);
-		sign_in_with_Facebook.click();*/
-			
-		// without pop-up
-		WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']	")));
-		Thread.sleep(2000);
-		sign_in_with_Facebook.click();
-	
-		Thread.sleep(3000);
-			System.out.println("facebook button clicked");
+			WebElement existingUser = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
+
+			js.executeScript("arguments[0].click();", existingUser);
+			Thread.sleep(2000);
+			WebElement sign_in_with_Facebook = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[1]")));
+			Thread.sleep(2000);
+			sign_in_with_Facebook.click();
+
+			// without pop-up
+			/*
+			 * WebElement sign_in_with_Facebook =
+			 * wait.until(ExpectedConditions.elementToBeClickable( By.
+			 * xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']	")))
+			 * ; Thread.sleep(2000); sign_in_with_Facebook.click();
+			 * 
+			 * Thread.sleep(3000); System.out.println("facebook button clicked");
+			 */
 		} catch (InterruptedException e) {
 		}
 	}

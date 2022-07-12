@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: Setupclass.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 3.327 s <<< FAILURE! - in Setupclass.TestRunner
+Setupclass.TestRunner  Time elapsed: 3.324 s  <<< ERROR!
+io.github.bonigarcia.wdm.config.WebDriverManagerException: java.net.UnknownHostException: api.github.com
+	at Setupclass.TestRunner.beforeClass(TestRunner.java:19)
+Caused by: java.net.UnknownHostException: api.github.com
+	at Setupclass.TestRunner.beforeClass(TestRunner.java:19)
+

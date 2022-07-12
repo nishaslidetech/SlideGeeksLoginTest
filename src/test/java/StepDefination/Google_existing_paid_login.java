@@ -2,15 +2,14 @@ package StepDefination;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -55,31 +54,36 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("user is on Login page and click on Signin with google buttoniii$")
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws Throwable {
 		// Click on Sign in with Google Account
-		/*WebElement existingUser = wait
+
+		WebElement existingUser = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
 
 		js.executeScript("arguments[0].click();", existingUser);
 		Thread.sleep(2000);
-		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
-                Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", sign_in_with_Google);;*/
-		
-		//without login
-		
-		WebElement sign_in_with_Google = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
-                Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", sign_in_with_Google);;
-                Thread.sleep(3000);
+		WebElement sign_in_with_Google = wait.until(
+				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", sign_in_with_Google);
+		;
+
+		// without login
+
+		/*
+		 * WebElement sign_in_with_Google = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//i[@class='icon fa fa-google']"))); Thread.sleep(2000);
+		 * js.executeScript("arguments[0].click();", sign_in_with_Google);
+		 */
+
+		Thread.sleep(3000);
 	}
 
 	@Then("user enters the username and passwordiii$")
 	public void user_enters_the_username_and_passwordiii() throws Throwable {
-		
-		 driver.manage().window().maximize();
-			
-		 // Store the CurrentWindow for future reference
+
+		driver.manage().window().maximize();
+
+		// Store the CurrentWindow for future reference
 		// String handle = " ";
 		String currentWindow = driver.getWindowHandle();
 		String popupWindowHandle = null;
@@ -125,7 +129,6 @@ public class Google_existing_paid_login extends BaseClass {
 		driver.switchTo().window(currentWindow);
 		Thread.sleep(4000);
 	}
-	
 
 	@Then("user downloads the PPTiii$")
 	public void user_downloads_the_pptiii() throws InterruptedException {

@@ -2,15 +2,14 @@ package StepDefination;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import Setupclass.BaseClass;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 
 //import io.cucumber.java.en.Given;
 //import io.cucumber.java.en.Then;
@@ -65,62 +64,66 @@ public class Normal_paid_login extends BaseClass {
 
 	@Then("user enters the username and password_vi$")
 	public void user_enters_the_username_and_password_vi() throws Throwable {
-		/*try {
-			WebElement existingUser = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
-		Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", existingUser);
-		Thread.sleep(2000);
-			
-		WebElement email_Address = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_email']")));
-		Thread.sleep(2000);
-		email_Address.clear();
-		email_Address.sendKeys("sumit.kumar@slidetech.in");
-			
-		WebElement password = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_password']")));
-		password.clear();
-		password.sendKeys("redhat2090");
 
-		WebElement login = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//div[@class ='is-selected']//button[@id = 'site_signin_btn']")));
-		login.click();
-		Thread.sleep(3000);
-		} catch (NoSuchElementException e) {
-
-		}*/
-		
 		try {
-			
-		// without login pop-up	
-			
-		WebElement email_Address = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//input[@placeholder='E-mail Address']")));
-		Thread.sleep(2000);
-		email_Address.clear();
-		email_Address.sendKeys("sumit.kumar@slidetech.in");
-			
-		WebElement password = wait.until(ExpectedConditions
-				.elementToBeClickable(By.xpath("//input[@placeholder='Password']")));
-		password.clear();
-		password.sendKeys("redhat2090");
+			WebElement existingUser = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
+			Thread.sleep(2000);
+			js.executeScript("arguments[0].click();", existingUser);
+			Thread.sleep(2000);
 
-		} catch (NoSuchElementException e) {
+			WebElement email_Address = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_email']")));
+			Thread.sleep(2000);
+			email_Address.clear();
+			email_Address.sendKeys("sumit.kumar@slidetech.in");
 
-		}
-	}
+			WebElement password = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//div[@class ='is-selected']//input[@name='site_signin_password']")));
+			password.clear();
+			password.sendKeys("redhat2090");
 
-	@Then("user clicks on Login button_vi$")
-	public void user_clicks_on_login_button_vi() throws Throwable {
-		try {
-			WebElement login_btn = BaseClass.elementToBeClickable(By.xpath("//input[@name='Submit']"));
-			// js.executeScript("arguments[0].click();", login_btn );
-			login_btn.click();
+			WebElement login = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[@class ='is-selected']//button[@id = 'site_signin_btn']")));
+			login.click();
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}
+
+		/*
+		 * try {
+		 * 
+		 * // without login pop-up
+		 * 
+		 * WebElement email_Address = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//input[@placeholder='E-mail Address']"))); Thread.sleep(2000);
+		 * email_Address.clear(); email_Address.sendKeys("sumit.kumar@slidetech.in");
+		 * 
+		 * WebElement password = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
+		 * "//input[@placeholder='Password']"))); password.clear();
+		 * password.sendKeys("redhat2090");
+		 * 
+		 * } catch (NoSuchElementException e) {
+		 * 
+		 * }
+		 */
+	}
+
+	@Then("user clicks on Login button_vi$")
+	public void user_clicks_on_login_button_vi() throws Throwable {
+		//without pop-up click on login button
+		
+		/*
+		 * try { WebElement login_btn =
+		 * BaseClass.elementToBeClickable(By.xpath("//input[@name='Submit']")); //
+		 * js.executeScript("arguments[0].click();", login_btn ); login_btn.click();
+		 * Thread.sleep(3000); } catch (NoSuchElementException e) {
+		 * 
+		 * }
+		 */
 	}
 
 	@Then("user downloads the PPT_vi$")
