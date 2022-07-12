@@ -51,16 +51,15 @@ public class Facebook_existing_paid_login extends BaseClass {
 			System.out.println("user is on Login page");
 			Thread.sleep(2000);
 
-			
-			  WebElement existingUser = wait
-			  .until(ExpectedConditions.elementToBeClickable(By.
-			  xpath("//a[normalize-space()='Existing Users']")));
-			  
-			  js.executeScript("arguments[0].click();", existingUser); Thread.sleep(2000);
-			  WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
-			  .elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[1]")));
-			  Thread.sleep(2000); sign_in_with_Facebook.click();
-			 
+			WebElement existingUser = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
+
+			js.executeScript("arguments[0].click();", existingUser);
+			Thread.sleep(2000);
+			WebElement sign_in_with_Facebook = wait.until(
+					ExpectedConditions.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[1]")));
+			Thread.sleep(2000);
+			sign_in_with_Facebook.click();
 
 			// without pop-up
 			/*
