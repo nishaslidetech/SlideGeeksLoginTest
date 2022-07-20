@@ -22,8 +22,6 @@ public class Normal_paid_login extends BaseClass {
 		driver.get(AppURL);
 		log.info("It's opening the website URL");
 		Thread.sleep(2000);
-		driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().deleteAllCookies();
 		Thread.sleep(3000);
 		driver.navigate().refresh();
@@ -65,69 +63,69 @@ public class Normal_paid_login extends BaseClass {
 	@Then("user enters the username and password_vi$")
 	public void user_enters_the_username_and_password_vi() throws Throwable {
 
-		try {
-			WebElement existingUser = wait.until(
-					ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
-			Thread.sleep(2000);
-			js.executeScript("arguments[0].click();", existingUser);
-			Thread.sleep(2000);
+		// with login pop-up
+		/*
+		 * try { WebElement existingUser = wait.until(
+		 * ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//a[normalize-space()='Existing Users']"))); Thread.sleep(2000);
+		 * js.executeScript("arguments[0].click();", existingUser); Thread.sleep(2000);
+		 * 
+		 * WebElement email_Address = wait.until(ExpectedConditions
+		 * .elementToBeClickable(By.
+		 * xpath("//div[@class ='is-selected']//input[@name='site_signin_email']")));
+		 * Thread.sleep(2000); email_Address.clear();
+		 * email_Address.sendKeys("sumit.kumar@slidetech.in");
+		 * 
+		 * WebElement password = wait.until(ExpectedConditions.elementToBeClickable(
+		 * By.xpath("//div[@class ='is-selected']//input[@name='site_signin_password']")
+		 * )); password.clear(); password.sendKeys("redhat2090");
+		 * 
+		 * WebElement login = wait.until(ExpectedConditions .elementToBeClickable(By.
+		 * xpath("//div[@class ='is-selected']//button[@id = 'site_signin_btn']")));
+		 * login.click(); Thread.sleep(3000); } catch (NoSuchElementException e) {
+		 * 
+		 * }
+		 */
 
-			WebElement email_Address = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[@class ='is-selected']//input[@name='site_signin_email']")));
+		try {
+
+			// without login pop-up
+
+			WebElement email_Address = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='E-mail Address']")));
 			Thread.sleep(2000);
 			email_Address.clear();
 			email_Address.sendKeys("sumit.kumar@slidetech.in");
 
-			WebElement password = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//div[@class ='is-selected']//input[@name='site_signin_password']")));
+			WebElement password = wait
+					.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Password']")));
 			password.clear();
 			password.sendKeys("redhat2090");
 
-			WebElement login = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[@class ='is-selected']//button[@id = 'site_signin_btn']")));
-			login.click();
+		} catch (NoSuchElementException e) {
+
+		}
+
+	}
+
+	@Then("user clicks on Login button_vi$")
+	public void user_clicks_on_login_button_vi() throws Throwable {
+		// without pop-up click on login button
+
+		try {
+			WebElement login_btn = BaseClass.elementToBeClickable(By.xpath("//input[@name='Submit']")); //
+			js.executeScript("arguments[0].click();", login_btn);
+			login_btn.click();
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
 		}
 
-		/*
-		 * try {
-		 * 
-		 * // without login pop-up
-		 * 
-		 * WebElement email_Address = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.
-		 * xpath("//input[@placeholder='E-mail Address']"))); Thread.sleep(2000);
-		 * email_Address.clear(); email_Address.sendKeys("sumit.kumar@slidetech.in");
-		 * 
-		 * WebElement password = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.xpath(
-		 * "//input[@placeholder='Password']"))); password.clear();
-		 * password.sendKeys("redhat2090");
-		 * 
-		 * } catch (NoSuchElementException e) {
-		 * 
-		 * }
-		 */
-	}
-
-	@Then("user clicks on Login button_vi$")
-	public void user_clicks_on_login_button_vi() throws Throwable {
-		//without pop-up click on login button
-		
-		/*
-		 * try { WebElement login_btn =
-		 * BaseClass.elementToBeClickable(By.xpath("//input[@name='Submit']")); //
-		 * js.executeScript("arguments[0].click();", login_btn ); login_btn.click();
-		 * Thread.sleep(3000); } catch (NoSuchElementException e) {
-		 * 
-		 * }
-		 */
 	}
 
 	@Then("user downloads the PPT_vi$")
 	public void user_downloads_the_ppt_vi() throws Throwable {
+
 		WebElement most_popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
 		most_popular_Ppts.click();
 		try {

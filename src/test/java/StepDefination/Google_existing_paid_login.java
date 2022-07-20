@@ -53,27 +53,28 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user is on Login page and click on Signin with google buttoniii$")
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws Throwable {
-		// Click on Sign in with Google Account
+		// Click on Sign in with Google Account 
+		
+		// with login pop-up
 
-		WebElement existingUser = wait
-				.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[normalize-space()='Existing Users']")));
-
-		js.executeScript("arguments[0].click();", existingUser);
-		Thread.sleep(2000);
-		WebElement sign_in_with_Google = wait.until(
-				ExpectedConditions.elementToBeClickable(By.xpath("//div[@class ='is-selected']//ul//li[3]//img")));
-		Thread.sleep(2000);
-		js.executeScript("arguments[0].click();", sign_in_with_Google);
-		;
+		/*
+		 * WebElement existingUser = wait
+		 * .until(ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//a[normalize-space()='Existing Users']")));
+		 * 
+		 * js.executeScript("arguments[0].click();", existingUser); Thread.sleep(2000);
+		 * WebElement sign_in_with_Google = wait.until(
+		 * ExpectedConditions.elementToBeClickable(By.
+		 * xpath("//div[@class ='is-selected']//ul//li[3]//img"))); Thread.sleep(2000);
+		 * js.executeScript("arguments[0].click();", sign_in_with_Google);
+		 */
 
 		// without login
 
-		/*
-		 * WebElement sign_in_with_Google = wait
-		 * .until(ExpectedConditions.elementToBeClickable(By.
-		 * xpath("//i[@class='icon fa fa-google']"))); Thread.sleep(2000);
-		 * js.executeScript("arguments[0].click();", sign_in_with_Google);
-		 */
+		WebElement sign_in_with_Google = wait
+				.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", sign_in_with_Google);
 
 		Thread.sleep(3000);
 	}
