@@ -28,9 +28,11 @@ public class Google_existing_paid_login extends BaseClass {
 	}
 
 	@Then("user click on the Popular PPTsiii$")
-	public void user_click_on_the_popular_PPsiii() {
+	public void user_click_on_the_popular_PPsiii() throws InterruptedException {
+		Thread.sleep(3000);
 		WebElement most_popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
 		most_popular_Ppts.click();
+		Thread.sleep(3000);
 	}
 
 	@Then("User try to download the pptiii$")
@@ -45,7 +47,7 @@ public class Google_existing_paid_login extends BaseClass {
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}

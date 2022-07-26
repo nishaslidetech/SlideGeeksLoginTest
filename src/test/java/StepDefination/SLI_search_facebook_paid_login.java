@@ -31,13 +31,14 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		Thread.sleep(4000);
 		WebElement Sign_in_with_facebook = BaseClass
 				.elementToBeClickable(By.xpath("//ul[@class='social_links']//i[@class='icon fa fa-facebook']"));
-		Thread.sleep(1000);
-		Sign_in_with_facebook.click();
+		Thread.sleep(2000);
+		js.executeScript("arguments[0].click();", Sign_in_with_facebook);
 		System.out.println("facebook button clicked");
 	}
 
 	@Then("user enters the username and password_vii$")
 	public void user_enters_the_username_and_password_vii() throws Throwable {
+		Thread.sleep(4000);
 		driver.manage().window().maximize();
 		// String handle = " ";
 		String currentWindow = driver.getWindowHandle();
@@ -86,7 +87,7 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 
 	@Then("enter keyword in search field_vii$")
 	public void enter_keyword_in_search_field_vii() throws Throwable {
-		Thread.sleep(8000);
+		Thread.sleep(5000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
 		search_field.sendKeys("software");

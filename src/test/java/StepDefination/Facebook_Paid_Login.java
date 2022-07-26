@@ -26,7 +26,7 @@ public class Facebook_Paid_Login extends BaseClass {
 			driver.manage().timeouts().implicitlyWait(4000, TimeUnit.MILLISECONDS);
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			BaseClass.ClearBrowserCache();
-
+			Thread.sleep(3000);
 			WebElement Sign_in_with_facebook = BaseClass
 					.elementToBeClickable(By.xpath("//ul[@class='social_links']//i[@class='icon fa fa-facebook']"));
 			Thread.sleep(1000);

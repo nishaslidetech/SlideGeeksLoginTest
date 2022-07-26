@@ -46,12 +46,12 @@ public class Google_free_login extends BaseClass {
 					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
-
+			Thread.sleep(3000);
 			WebElement download_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
 			download_ppt.click();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (NoSuchElementException e) {
 
 		}

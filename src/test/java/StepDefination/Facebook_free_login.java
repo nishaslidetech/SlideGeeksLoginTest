@@ -28,8 +28,9 @@ public class Facebook_free_login extends BaseClass {
 	}
 
 	@Then("user click on the Free PPts under free stuff_ii")
-	public void user_click_on_the_free_ppts_under_free_stuff_ii() {
+	public void user_click_on_the_free_ppts_under_free_stuff_ii() throws InterruptedException {
 		try {
+			Thread.sleep(3000);
 			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
 

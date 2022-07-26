@@ -23,8 +23,10 @@ public class Google_Paid_Login extends BaseClass {
 			driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 			BaseClass.ClearBrowserCache();
 			// Click on Sign in with Google Account
+			Thread.sleep(3000);
 			WebElement Sign_in_with_google = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
+			Thread.sleep(2000);
 			Sign_in_with_google.click();
 
 			Thread.sleep(3000);

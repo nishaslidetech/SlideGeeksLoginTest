@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="65.313">
+    <testcase classname="SLI search facebook login" name="SLI search facebook login test" time="65.05">
+        <failure message="Failed to decode response from marionette&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8040, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 6abd05a4-4ef0-4d63-a0b0-f44eff3c44e5&#10;*** Element info: {Using=xpath, value=//input[@id='email']}" type="org.openqa.selenium.WebDriverException"><![CDATA[Given User is home page_vii.................................................passed
+Then user will clicks on the sign in with Facebook button_vii...............passed
+And user enters the username and password_vii...............................failed
+Then enter keyword in search field_vii......................................skipped
+Then user selects and download the PPT_vii..................................skipped
+Then user clicks on the Logout page_vii.....................................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: Failed to decode response from marionette
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 102.0.1, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20220705093820, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:processID: 8040, moz:profile: C:\Users\SLIDEQ~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 6abd05a4-4ef0-4d63-a0b0-f44eff3c44e5
+*** Element info: {Using=xpath, value=//input[@id='email']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at StepDefination.SLI_search_facebook_paid_login.user_enters_the_username_and_password_vii(SLI_search_facebook_paid_login.java:57)
+	at ✽.user enters the username and password_vii(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:7)
+]]></failure>
+    </testcase>
+</testsuite>

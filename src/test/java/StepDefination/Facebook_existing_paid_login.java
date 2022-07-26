@@ -28,8 +28,8 @@ public class Facebook_existing_paid_login extends BaseClass {
 	}
 
 	@Then("user clicks on the Popular PPTsi$")
-	public void user_clicks_on_the_popular_pp_tsi() {
-
+	public void user_clicks_on_the_popular_pp_tsi() throws InterruptedException {
+		Thread.sleep(3000);
 		most_popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
 		most_popular_Ppts.click();
 	}
@@ -49,7 +49,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			System.out.println("user is on Login page");
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 
 			// with pop-up
 
@@ -68,7 +68,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 			// without pop-up
 
 			WebElement sign_in_with_Facebook = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']	")));
+					By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']")));
 			Thread.sleep(2000);
 			sign_in_with_Facebook.click();
 

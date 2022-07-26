@@ -40,7 +40,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 			Thread.sleep(3000);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(3000);
-			Thread.sleep(1000);
+		
 			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
 
@@ -51,17 +51,18 @@ public class SLI_search_google_paid_login extends BaseClass {
 	}
 
 	@Then("user will clicks on the sign in with Google button_viii$")
-	public void user_will_clicks_on_the_sign_in_with_google_button_viii() {
+	public void user_will_clicks_on_the_sign_in_with_google_button_viii() throws InterruptedException {
 		// Click on Sign in with Google Account
 		WebElement Sign_in_with_google = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
+		Thread.sleep(3000);
 		js.executeScript("arguments[0].click();", Sign_in_with_google);
 		// Sign_in_with_google.click();
 	}
 
 	@Then("user enters the username and password_viii$")
 	public void user_enters_the_username_and_password_viii() throws Throwable {
-
+		Thread.sleep(5000);
 		driver.manage().window().maximize();
 
 		// Store the CurrentWindow for future reference
@@ -78,7 +79,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 				driver.switchTo().window(popupWindowHandle);
 				driver.manage().window().maximize();
 
-				Thread.sleep(5000);
+				
 
 				if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
 					WebElement another_btn = BaseClass
