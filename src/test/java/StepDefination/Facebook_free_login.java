@@ -21,9 +21,7 @@ public class Facebook_free_login extends BaseClass {
 		BaseClass.ClearfacebookCache();
 
 		driver.get(AppURL);
-		log.info("It's opening the website URL");
-		driver.manage().timeouts().implicitlyWait(9000, TimeUnit.MILLISECONDS);
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+	
 		BaseClass.ClearBrowserCache();
 	}
 
@@ -109,7 +107,7 @@ public class Facebook_free_login extends BaseClass {
 				WebElement fb_email = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 				fb_email.clear();
-				fb_email.sendKeys("ritapahwa08@gmail.com");
+				fb_email.sendKeys("slidetech.qa.tester@gmail.com");
 				Thread.sleep(3000);
 				WebElement fb_pass = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
@@ -125,7 +123,7 @@ public class Facebook_free_login extends BaseClass {
 								ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
 
 						fb_login.click();
-						Thread.sleep(3000);
+						Thread.sleep(5000);
 					}
 				} catch (NoSuchElementException e) {
 
@@ -135,8 +133,9 @@ public class Facebook_free_login extends BaseClass {
 
 			}
 		}
+		Thread.sleep(5000);
 		driver.switchTo().window(currentWindow);
-		Thread.sleep(3000);
+		
 	}
 
 	@Then("user downloads the free PPT_ii")
