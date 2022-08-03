@@ -38,12 +38,12 @@ public class Facebook_existing_paid_login extends BaseClass {
 	public void user_try_to_Download_the_ppti() throws InterruptedException {
 
 		try {
-			Thread.sleep(2000);
-			WebElement select_Ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@class='box-top']//img[@title='Emerging Marketplace Strategies Growth Ppt PowerPoint Presentation Complete Deck']")));
+			Thread.sleep(4000);
+			WebElement select_Ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
-
+			Thread.sleep(3000);
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
@@ -67,8 +67,8 @@ public class Facebook_existing_paid_login extends BaseClass {
 
 			// without pop-up
 
-			WebElement sign_in_with_Facebook = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']")));
+			WebElement sign_in_with_Facebook = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//a[@id='facebook-signin-btn']//i[@class='icon fa fa-facebook']")));
 			Thread.sleep(2000);
 			sign_in_with_Facebook.click();
 
@@ -137,8 +137,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTi$")
 	public void user_downloads_the_ppti() throws Throwable {
 		Thread.sleep(7000);
-		driver.get(
-				"https://www.slidegeeks.com/business/product/emerging-marketplace-strategies-growth-ppt-powerpoint-presentation-complete-deck");
+		// driver.get("https://www.slidegeeks.com/business/product/emerging-marketplace-strategies-growth-ppt-powerpoint-presentation-complete-deck");
 		WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 		download_Ppt.click();

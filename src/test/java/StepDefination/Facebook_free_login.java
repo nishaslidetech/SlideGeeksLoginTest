@@ -46,7 +46,7 @@ public class Facebook_free_login extends BaseClass {
 					By.xpath("//span[normalize-space()='Download Free Skills Free PowerPoint Slide']")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
-
+			Thread.sleep(3000);
 			WebElement download_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
@@ -107,12 +107,14 @@ public class Facebook_free_login extends BaseClass {
 				WebElement fb_email = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 				fb_email.clear();
+				Thread.sleep(1000);
 				fb_email.sendKeys("slidetech.qa.tester@gmail.com");
-				Thread.sleep(3000);
+				Thread.sleep(2000);
 				WebElement fb_pass = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 
 				fb_pass.clear();
+				Thread.sleep(1000);
 				fb_pass.sendKeys("Qwerty@1");
 				Thread.sleep(3000);
 				try {
