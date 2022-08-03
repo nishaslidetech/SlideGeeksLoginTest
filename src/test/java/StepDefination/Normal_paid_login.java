@@ -37,7 +37,7 @@ public class Normal_paid_login extends BaseClass {
 	@Then("User try to download the ppt_vi$")
 	public void user_try_to_download_the_ppt_vi() throws InterruptedException {
 		try {
-			
+
 			System.out.println("user should be on the login page + " + driver.getCurrentUrl());
 			Thread.sleep(3000);
 			WebElement select_Ppt = wait.until(ExpectedConditions
@@ -50,7 +50,7 @@ public class Normal_paid_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 			download_Ppt.click();
 			System.out.println("user is on Login page");
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 
 		} catch (NoSuchElementException e) {
 
@@ -117,7 +117,6 @@ public class Normal_paid_login extends BaseClass {
 		try {
 			WebElement login_btn = BaseClass.elementToBeClickable(By.xpath("//input[@name='Submit']")); //
 			js.executeScript("arguments[0].click();", login_btn);
-			login_btn.click();
 			Thread.sleep(3000);
 		} catch (NoSuchElementException e) {
 
@@ -128,14 +127,20 @@ public class Normal_paid_login extends BaseClass {
 	@Then("user downloads the PPT_vi$")
 	public void user_downloads_the_ppt_vi() throws Throwable {
 
-		WebElement most_popular_Ppts = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
-		most_popular_Ppts.click();
+		/*
+		 * WebElement most_popular_Ppts =
+		 * wait.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR"
+		 * ))); most_popular_Ppts.click();
+		 */
 		try {
-			Thread.sleep(2000);
-			WebElement select_Ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
-			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
-			select_Ppt.click();
+
+			/*
+			 * Thread.sleep(2000); WebElement select_Ppt = wait.until(ExpectedConditions
+			 * .elementToBeClickable(By.xpath(
+			 * "//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
+			 * js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
+			 * select_Ppt.click(); Thread.sleep(3000);
+			 */
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
@@ -157,6 +162,7 @@ public class Normal_paid_login extends BaseClass {
 
 	@Then("user clicks on the Logout page_vi$")
 	public void user_clicks_on_the_logout_page() throws InterruptedException {
+
 		try {
 			Thread.sleep(4000);
 			WebElement logout = wait
@@ -165,6 +171,7 @@ public class Normal_paid_login extends BaseClass {
 		} catch (NoSuchElementException e) {
 
 		}
+
 	}
 
 }
