@@ -21,7 +21,7 @@ public class Facebook_free_login extends BaseClass {
 		BaseClass.ClearfacebookCache();
 
 		driver.get(AppURL);
-	
+
 		BaseClass.ClearBrowserCache();
 	}
 
@@ -108,14 +108,14 @@ public class Facebook_free_login extends BaseClass {
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 				fb_email.clear();
 				Thread.sleep(1000);
-				fb_email.sendKeys("slidetech.qa.tester@gmail.com");
+				fb_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(2000);
 				WebElement fb_pass = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 
 				fb_pass.clear();
 				Thread.sleep(1000);
-				fb_pass.sendKeys("Qwerty@1");
+				fb_pass.sendKeys("himanshi@123");
 				Thread.sleep(3000);
 				try {
 					if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
@@ -137,7 +137,7 @@ public class Facebook_free_login extends BaseClass {
 		}
 		Thread.sleep(5000);
 		driver.switchTo().window(currentWindow);
-		
+
 	}
 
 	@Then("user downloads the free PPT_ii")
