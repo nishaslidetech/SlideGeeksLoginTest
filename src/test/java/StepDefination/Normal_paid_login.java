@@ -37,6 +37,8 @@ public class Normal_paid_login extends BaseClass {
 	@Then("User try to download the ppt_vi$")
 	public void user_try_to_download_the_ppt_vi() throws InterruptedException {
 		try {
+			
+			System.out.println("user should be on the login page + " + driver.getCurrentUrl());
 			Thread.sleep(3000);
 			WebElement select_Ppt = wait.until(ExpectedConditions
 					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
@@ -130,8 +132,8 @@ public class Normal_paid_login extends BaseClass {
 		most_popular_Ppts.click();
 		try {
 			Thread.sleep(2000);
-			WebElement select_Ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@class='box-top']//img[@title='Emerging Marketplace Strategies Growth Ppt PowerPoint Presentation Complete Deck']")));
+			WebElement select_Ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
 
