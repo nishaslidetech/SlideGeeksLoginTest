@@ -37,12 +37,12 @@ public class Normal_paid_login extends BaseClass {
 	@Then("User try to download the ppt_vi$")
 	public void user_try_to_download_the_ppt_vi() throws InterruptedException {
 		try {
-			Thread.sleep(2000);
-			WebElement select_Ppt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@class='box-top']//img[@title='Emerging Marketplace Strategies Growth Ppt PowerPoint Presentation Complete Deck']")));
+			Thread.sleep(3000);
+			WebElement select_Ppt = wait.until(ExpectedConditions
+					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
 			select_Ppt.click();
-
+			Thread.sleep(3000);
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
