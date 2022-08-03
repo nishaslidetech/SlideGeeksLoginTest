@@ -150,10 +150,13 @@ public class Facebook_free_login extends BaseClass {
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 
-			WebElement download_ppt = wait
-					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
-			js.executeScript("arguments[0].scrollIntoView();", download_ppt);
-			download_ppt.click();
+			/*
+			 * WebElement download_ppt = wait
+			 * .until(ExpectedConditions.elementToBeClickable(By.
+			 * linkText("Download this Presentation")));
+			 * js.executeScript("arguments[0].scrollIntoView();", download_ppt);
+			 * download_ppt.click();
+			 */
 			Thread.sleep(3000);
 			// if any pop-up visible
 			if (!driver.findElements(By.xpath("//a[@class='mfp-close roundlink']")).isEmpty()) {

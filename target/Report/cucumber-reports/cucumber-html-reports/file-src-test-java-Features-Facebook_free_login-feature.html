@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>03 Aug 2022, 12:00</td>
+                        <td>03 Aug 2022, 12:04</td>
           </tr>
         </tbody>
       </table>
@@ -126,13 +126,13 @@ $(document).ready(function() {
                     <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td      class="passed"    >6</td>
+          <td      class="passed"    >5</td>
           <td      class="failed"    >1</td>
-          <td >0</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
-          <td class="duration" data-value="137496608000">2m 17s 496ms</td>
+          <td class="duration" data-value="97849582700">1m 37s 849ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -211,7 +211,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">User is home page_ii</span>
   
-  <span class="lead-duration duration">15s 234ms</span>
+  <span class="lead-duration duration">15s 285ms</span>
 
   </div>
 
@@ -232,7 +232,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user click on the Free PPts under free stuff_ii</span>
   
-  <span class="lead-duration duration">4s 738ms</span>
+  <span class="lead-duration duration">4s 590ms</span>
 
   </div>
 
@@ -253,7 +253,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">User try to download the free ppts_ii</span>
   
-  <span class="lead-duration duration">16s 435ms</span>
+  <span class="lead-duration duration">19s 570ms</span>
 
   </div>
 
@@ -274,7 +274,7 @@ $(document).ready(function() {
   <span class="keyword indention">Then</span>
   <span class="name">user is on home page page and click on facebbook button_ii</span>
   
-  <span class="lead-duration duration">7s 880ms</span>
+  <span class="lead-duration duration">5s 196ms</span>
 
   </div>
 
@@ -295,28 +295,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">user enters the free username and password_ii</span>
   
-  <span class="lead-duration duration">15s 569ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief passed">
-  <span class="keyword indention">Then</span>
-  <span class="name">user downloads the free PPT_ii</span>
-  
-  <span class="lead-duration duration">43s 554ms</span>
+  <span class="lead-duration duration">15s 551ms</span>
 
   </div>
 
@@ -335,9 +314,9 @@ $(document).ready(function() {
         
 <div class="brief failed">
   <span class="keyword indention">Then</span>
-  <span class="name">user clicks on the logout page_ii</span>
+  <span class="name">user downloads the free PPT_ii</span>
   
-  <span class="lead-duration duration">34s 083ms</span>
+  <span class="lead-duration duration">37s 655ms</span>
 
   </div>
 
@@ -349,20 +328,20 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[normalize-space()='Logout'] (tried for 30 second(s) with 500 milliseconds interval)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.linkText: Download this Presentation (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at StepDefination.Facebook_free_login.user_clicks_on_the_logout_page_ii(Facebook_free_login.java:175)
-	at ✽.user clicks on the logout page_ii(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_free_login.feature:11)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[normalize-space()='Logout']"}
+	at StepDefination.Facebook_free_login.user_downloads_the_free_ppt_ii(Facebook_free_login.java:154)
+	at ✽.user downloads the free PPT_ii(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_free_login.feature:10)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"link text","selector":"Download this Presentation"}
   (Session info: chrome=103.0.5060.134)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'SLIDEQA2', ip: '192.168.43.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61868}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 228cc390b45d046ebb35b0cf5453a892
-*** Element info: {Using=xpath, value=//a[normalize-space()='Logout']}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62207}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8745bc06c4cd17ad692c666c0dac2111
+*** Element info: {Using=link text, value=Download this Presentation}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -375,15 +354,15 @@ Session ID: 228cc390b45d046ebb35b0cf5453a892
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByLinkText(RemoteWebDriver.java:380)
+	at org.openqa.selenium.By$ByLinkText.findElement(By.java:220)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at StepDefination.Facebook_free_login.user_clicks_on_the_logout_page_ii(Facebook_free_login.java:175)
+	at StepDefination.Facebook_free_login.user_downloads_the_free_ppt_ii(Facebook_free_login.java:154)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -442,6 +421,27 @@ Session ID: 228cc390b45d046ebb35b0cf5453a892
         
 
       </div>
+          <div class="step">
+        
+<div class="brief skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">user clicks on the logout page_ii</span>
+  
+  <span class="lead-duration duration">000ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
       </div>
 </div>
 
@@ -466,7 +466,7 @@ Session ID: 228cc390b45d046ebb35b0cf5453a892
             <span class="keyword indention">After</span>
                           <span class="location name">StepDefination.TakeImageStep.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">291ms</span>
+  <span class="lead-duration duration">426ms</span>
 
           </div>
 
@@ -476,12 +476,12 @@ Session ID: 228cc390b45d046ebb35b0cf5453a892
           
   <div class="embeddings inner-level">
                 <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1563938261" class="collapsable-control">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-471690926" class="collapsable-control">
       <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1563938261.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+      <a href="embeddings/embedding_-471690926.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
     </div>
-    <div id="embedding_embedding_-1563938261" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1563938261.png"></span>
+    <div id="embedding_embedding_-471690926" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-471690926.png"></span>
     </div>
   </div>
         </div>
