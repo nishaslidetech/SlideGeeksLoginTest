@@ -118,7 +118,7 @@ public class Facebook_existing_paid_login extends BaseClass {
 						driver.findElement(By.xpath("//input[@value='Log in']")).click();
 					} else {
 						WebElement fb_login = wait.until(
-								ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
+								ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']")));
 
 						fb_login.click();
 						Thread.sleep(3000);
