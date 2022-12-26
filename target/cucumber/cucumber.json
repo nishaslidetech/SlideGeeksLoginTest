@@ -1,0 +1,133 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-26T11:24:50.068Z",
+        "line": 4,
+        "name": "Login with existing facebook paid account test",
+        "description": "",
+        "id": "login-with-existing-facebook-paid-account-test;login-with-existing-facebook-paid-account-test",
+        "after": [
+          {
+            "result": {
+              "duration": 4590800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepDefination.TakeImageStep.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16557790800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is home pagei",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_is_home_pagei()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4861912600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on the Popular PPTsi",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_clicks_on_the_popular_pp_tsi()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18087590900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User try to Download the ppti",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_try_to_Download_the_ppti()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1578100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user is on Login pagei",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_is_on_login_pagei()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10629281200,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user Enters the username and passwordi",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_Enters_the_username_and_passwordi()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11956802300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user downloads the PPTi",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_downloads_the_ppti()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4083003900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on the Logout pagei",
+            "match": {
+              "location": "StepDefination.Facebook_existing_paid_login.user_clicks_on_the_logout_pagei()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@facebook_existing_paid_login"
+          }
+        ]
+      }
+    ],
+    "name": "Login with existing facebook paid account test",
+    "description": "",
+    "id": "login-with-existing-facebook-paid-account-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/Features/Facebook_existing_paid_login.feature",
+    "tags": [
+      {
+        "name": "@facebook_existing_paid_login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

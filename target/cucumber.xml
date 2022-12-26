@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="66.85">
+    <testcase classname="Login with existing facebook paid account test" name="Login with existing facebook paid account test" time="66.37">
+        <system-out><![CDATA[Given User is home pagei....................................................passed
+Then user clicks on the Popular PPTsi.......................................passed
+Then User try to Download the ppti..........................................passed
+Then user is on Login pagei.................................................passed
+And user Enters the username and passwordi..................................passed
+Then user downloads the PPTi................................................passed
+Then user clicks on the Logout pagei........................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

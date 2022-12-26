@@ -118,8 +118,8 @@ public class Facebook_free_login extends BaseClass {
 				fb_pass.sendKeys("himanshi@123");
 				Thread.sleep(3000);
 				try {
-					if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
-						driver.findElement(By.xpath("//input[@value='Log In']")).click();
+					if (!driver.findElements(By.xpath("//input[@value='Log in']")).isEmpty()) {
+						driver.findElement(By.xpath("//input[@value='Log in']")).click();
 					} else {
 						WebElement fb_login = wait.until(
 								ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
