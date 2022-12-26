@@ -55,8 +55,8 @@ public class Google_existing_paid_login extends BaseClass {
 
 	@Then("user is on Login page and click on Signin with google buttoniii$")
 	public void user_is_on_login_page_and_click_on_sigin_with_google_buttoniii() throws Throwable {
-		// Click on Sign in with Google Account 
-		
+		// Click on Sign in with Google Account
+
 		// with login pop-up
 
 		/*
@@ -102,8 +102,8 @@ public class Google_existing_paid_login extends BaseClass {
 
 				Thread.sleep(5000);
 
-				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				WebElement g_email = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='identifierId']")));
 				Thread.sleep(3000);
 				g_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(3000);
@@ -115,8 +115,8 @@ public class Google_existing_paid_login extends BaseClass {
 
 				Thread.sleep(3000);
 
-				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
+				WebElement g_pass = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']")));
 				Thread.sleep(3000);
 				g_pass.sendKeys("Himanshi@123");
 

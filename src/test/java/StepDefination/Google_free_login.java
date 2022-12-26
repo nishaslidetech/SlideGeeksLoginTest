@@ -75,7 +75,7 @@ public class Google_free_login extends BaseClass {
 		 * js.executeScript("arguments[0].click();", sign_in_with_Google);
 		 */
 
-        // without login pop-up
+		// without login pop-up
 		WebElement sign_in_with_Google = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//i[@class='icon fa fa-google']")));
 		Thread.sleep(2000);
@@ -112,8 +112,8 @@ public class Google_free_login extends BaseClass {
 					another_btn.click();
 				}
 
-				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				WebElement g_email = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='identifierId']")));
 				g_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(3000);
 
@@ -123,8 +123,8 @@ public class Google_free_login extends BaseClass {
 
 				Thread.sleep(3000);
 
-				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
+				WebElement g_pass = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']")));
 
 				g_pass.sendKeys("Himanshi@123");
 
