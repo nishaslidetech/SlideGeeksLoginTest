@@ -1,1 +1,110 @@
-[]
+[
+  {
+    "source": "User is home page_vii$",
+    "steps": [
+      {
+        "name": "User is home page_vii",
+        "aggregatedDurations": {
+          "median": 21.0544382,
+          "average": 21.0544382
+        },
+        "durations": [
+          {
+            "duration": 21.0544382,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user will clicks on the sign in with Facebook button_vii$",
+    "steps": [
+      {
+        "name": "user will clicks on the sign in with Facebook button_vii",
+        "aggregatedDurations": {
+          "median": 6.1411539,
+          "average": 6.1411539
+        },
+        "durations": [
+          {
+            "duration": 6.1411539,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user enters the username and password_vii$",
+    "steps": [
+      {
+        "name": "user enters the username and password_vii",
+        "aggregatedDurations": {
+          "median": 14.3406453,
+          "average": 14.3406453
+        },
+        "durations": [
+          {
+            "duration": 14.3406453,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "enter keyword in search field_vii$",
+    "steps": [
+      {
+        "name": "enter keyword in search field_vii",
+        "aggregatedDurations": {
+          "median": 12.7517561,
+          "average": 12.7517561
+        },
+        "durations": [
+          {
+            "duration": 12.7517561,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user selects and download the PPT_vii$",
+    "steps": [
+      {
+        "name": "user selects and download the PPT_vii",
+        "aggregatedDurations": {
+          "median": 4.0914205,
+          "average": 4.0914205
+        },
+        "durations": [
+          {
+            "duration": 4.0914205,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user clicks on the Logout page_vii$",
+    "steps": [
+      {
+        "name": "user clicks on the Logout page_vii",
+        "aggregatedDurations": {
+          "median": 6.2398235,
+          "average": 6.2398235
+        },
+        "durations": [
+          {
+            "duration": 6.2398235,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature:10"
+          }
+        ]
+      }
+    ]
+  }
+]
