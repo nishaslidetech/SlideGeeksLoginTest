@@ -149,9 +149,10 @@ public class Google_free_login extends BaseClass {
 			Thread.sleep(5000);
 			WebElement free_Slides = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("FREE SLIDES")));
 			free_Slides.click();
+			Thread.sleep(4000);
 
 			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
+					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Template')]")));
 			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
 			select_ppt.click();
 
