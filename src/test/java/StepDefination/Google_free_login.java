@@ -44,10 +44,10 @@ public class Google_free_login extends BaseClass {
 
 		try {
 
-			List<WebElement> select_Ppt = driver
-					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
-			select_Ppt.get(1).click();
-			Thread.sleep(3000);
+			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
+					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Template')]")));
+			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
+			select_ppt.click();
 
 			Thread.sleep(3000);
 			WebElement download_ppt = wait

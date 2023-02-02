@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Setupclass.TestRunner" time="70.92" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="Setupclass.TestRunner" time="41.937" tests="1" errors="1" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Users\SLIDE QA\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.0.v20211012-1059\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire5245362715306715775\surefirebooter10406767110025072365.jar C:\Users\SLIDE QA\AppData\Local\Temp\surefire5245362715306715775 2023-02-02T12-29-23_100-jvmRun1 surefire1554318678852569293tmp surefire_016029575296163901317tmp"/>
+    <property name="sun.java.command" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire5962184957745659370\surefirebooter17940763276842207766.jar C:\Users\SLIDE QA\AppData\Local\Temp\surefire5962184957745659370 2023-02-02T13-28-08_369-jvmRun1 surefire17250185356605153743tmp surefire_012828816162253763188tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Selenium Live Projects\slidegeeksLoginTest\target\test-classes;D:\Selenium Live Projects\slidegeeksLoginTest\target\classes;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\SLIDE QA\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\SLIDE QA\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\SLIDE QA\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\SLIDE QA\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\SLIDE QA\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-java\6.10.2\cucumber-java-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-junit\6.10.2\cucumber-junit-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-core\6.10.2\cucumber-core-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin\6.10.2\cucumber-gherkin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.2\cucumber-gherkin-messages-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\messages\14.0.1\messages-14.0.1.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\tag-expressions\3.0.0\tag-expressions-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\cucumber-plugin\6.10.2\cucumber-plugin-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\docstring\6.10.2\docstring-6.10.2.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\html-formatter\12.0.0\html-formatter-12.0.0.jar;C:\Users\SLIDE QA\.m2\repository\io\cucumber\create-meta\3.0.0\create-meta-3.0.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\SLIDE QA\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\SLIDE QA\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\SLIDE QA\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\plugins\maven-compiler-plugin\3.8.0\maven-compiler-plugin-3.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-plugin-api\3.0\maven-plugin-api-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model\3.0\maven-model-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-plexus\1.4.2\sisu-inject-plexus-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-inject-bean\1.4.2\sisu-inject-bean-1.4.2.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\sisu\sisu-guice\2.1.7\sisu-guice-2.1.7-noaop.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-artifact\3.0\maven-artifact-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-utils\2.0.4\plexus-utils-2.0.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-core\3.0\maven-core-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings\3.0\maven-settings-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-settings-builder\3.0\maven-settings-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-repository-metadata\3.0\maven-repository-metadata-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-model-builder\3.0\maven-model-builder-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\maven-aether-provider\3.0\maven-aether-provider-3.0.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-impl\1.7\aether-impl-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-spi\1.7\aether-spi-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-api\1.7\aether-api-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\aether\aether-util\1.7\aether-util-1.7.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.14\plexus-interpolation-1.14.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.2.3\plexus-classworlds-2.2.3.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\SLIDE QA\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-utils\3.2.1\maven-shared-utils-3.2.1.jar;C:\Users\SLIDE QA\.m2\repository\commons-io\commons-io\2.5\commons-io-2.5.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\maven\shared\maven-shared-incremental\1.1\maven-shared-incremental-1.1.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-java\0.9.10\plexus-java-0.9.10.jar;C:\Users\SLIDE QA\.m2\repository\org\ow2\asm\asm\6.2\asm-6.2.jar;C:\Users\SLIDE QA\.m2\repository\com\thoughtworks\qdox\qdox\2.0-M8\qdox-2.0-M8.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-api\2.8.4\plexus-compiler-api-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-manager\2.8.4\plexus-compiler-manager-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\org\codehaus\plexus\plexus-compiler-javac\2.8.4\plexus-compiler-javac-2.8.4.jar;C:\Users\SLIDE QA\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar;C:\Users\SLIDE QA\.m2\repository\io\github\bonigarcia\webdrivermanager\5.1.0\webdrivermanager-5.1.0.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\SLIDE QA\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.0.3\httpclient5-5.0.3.jar;C:\Users\SLIDE QA\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.0.2\httpcore5-5.0.2.jar;C:\Users\SLIDE QA\.m2\repository\commons-codec\commons-codec\1.13\commons-codec-1.13.jar;C:\Users\SLIDE QA\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\SLIDE QA\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\SLIDE QA\.m2\repository\org\slf4j\slf4j-simple\1.7.25\slf4j-simple-1.7.25.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire5245362715306715775\surefirebooter10406767110025072365.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\SLIDE QA\AppData\Local\Temp\surefire5962184957745659370\surefirebooter17940763276842207766.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17+35"/>
@@ -57,22 +57,36 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="SLI search facebook login test" classname="SLI search facebook login" time="63.043">
+  <testcase name="Login with Google free account" classname="Login with Google free account test" time="33.459">
+    <error message="Index 1 out of bounds for length 0" type="java.lang.IndexOutOfBoundsException"><![CDATA[java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+]]></error>
     <system-out><![CDATA[Bname=====https://www.slidegeeks.com/
 config browser = chrome
 setProperty browser = chrome
 
-@SLI_Search_with_facebook_Paid
-Scenario: SLI search facebook login test                        &amp#27;[90m# src/test/java/Features/SLI_search_facebook_paid_login.feature:4&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is home page_vii&amp#27;[0m                                   &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.user_is_home_page_vii()&amp#27;[0m
-facebook button clicked
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser will clicks on the sign in with Facebook button_vii&amp#27;[0m &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.user_will_clicks_on_the_sign_in_with_facebook_button_vii()&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32muser enters the username and password_vii&amp#27;[0m                 &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.user_enters_the_username_and_password_vii()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32menter keyword in search field_vii&amp#27;[0m                        &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.enter_keyword_in_search_field_vii()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser selects and download the PPT_vii&amp#27;[0m                    &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.user_selects_and_download_the_ppt()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser clicks on the Logout page_vii&amp#27;[0m                       &amp#27;[90m# StepDefination.SLI_search_facebook_paid_login.user_clicks_on_the_logout_page_vii()&amp#27;[0m
+@Google_Free_login
+Scenario: Login with Google free account                       &amp#27;[90m# src/test/java/Features/Google_free_login.feature:4&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mUser is home pageiiv&amp#27;[0m                                   &amp#27;[90m# StepDefination.Google_free_login.user_is_home_pageiiv()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32muser click on the Free PPts under free stuffiiv&amp#27;[0m         &amp#27;[90m# StepDefination.Google_free_login.user_click_on_the_free_p_pts_under_free_stuffiiv()&amp#27;[0m
+  &amp#27;[31mThen &amp#27;[0m&amp#27;[31mUser try to download the free pptsiiv&amp#27;[0m                   &amp#27;[90m# StepDefination.Google_free_login.user_try_to_download_the_free_pptsiiv()&amp#27;[0m
+      &amp#27;[31mjava.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at StepDefination.Google_free_login.user_try_to_download_the_free_pptsiiv(Google_free_login.java:49)
+	at âœ½.User try to download the free pptsiiv(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:7)
+&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser is on home page page and click on google buttoniiv&amp#27;[0m &amp#27;[90m# StepDefination.Google_free_login.user_is_on_home_page_page_and_click_on_google_buttoniiv()&amp#27;[0m
+  &amp#27;[36mAnd &amp#27;[0m&amp#27;[36muser Enters the free username and passwordiiv&amp#27;[0m            &amp#27;[90m# StepDefination.Google_free_login.user_Enters_the_free_username_and_passwordiiv()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser downloads the free PPTiiv&amp#27;[0m                          &amp#27;[90m# StepDefination.Google_free_login.user_downloads_the_free_pptiiv()&amp#27;[0m
+  &amp#27;[36mThen &amp#27;[0m&amp#27;[36muser clicks on the Logout pageiiv&amp#27;[0m                       &amp#27;[90m# StepDefination.Google_free_login.user_clicks_on_the_logout_pageiiv()&amp#27;[0m
+
+    Embedding screenshotName [image/png 333656 bytes]
+
 ]]></system-out>
-    <system-err><![CDATA[Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+    <system-err><![CDATA[Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Facebook_existing_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_existing_paid_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -81,7 +95,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Facebook_free_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_free_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -90,7 +104,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Facebook_paid_Login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_paid_Login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -99,7 +113,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Google_existing_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_existing_paid_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -108,7 +122,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Google_free_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -117,7 +131,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Google_paid_Login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_paid_Login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -126,7 +140,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/Normal_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Normal_paid_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -135,7 +149,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/SLI_search_facebook_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_facebook_paid_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -144,7 +158,7 @@ Your build tool creates a copy of these features in a 'target' or 'build'directo
 If your features are on the class path consider using a class path URI.
 For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
-Feb 02, 2023 12:29:24 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
+Feb 02, 2023 1:28:09 PM io.cucumber.core.runtime.FeaturePathFeatureSupplier$FeatureBuilder addUnique
 SEVERE: Duplicate feature found: file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./target/test-classes/Features/SLI_search_google_paid_login.feature was identical to file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_google_paid_login.feature
 
 This typically happens when you configure cucumber to look for features in the root of your project.
@@ -155,11 +169,11 @@ For example: 'classpath:com/example/app.feature'
 Otherwise you'll have to provide a more specific location
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 109.0.5414.74 (resolved driver for Chrome 109)
 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\SLIDE QA\.cache\selenium\chromedriver\win32\109.0.5414.74\chromedriver.exe
-Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 20483
+Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 44191
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Feb 02, 2023 12:29:26 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Feb 02, 2023 1:28:12 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 log4j:WARN No appenders could be found for logger (org.junit.BeforeClass).
 log4j:WARN Please initialize the log4j system properly.

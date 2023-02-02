@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: Setupclass.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 70.92 s - in Setupclass.TestRunner
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 41.937 s <<< FAILURE! - in Setupclass.TestRunner
+Login with Google free account test.Login with Google free account  Time elapsed: 33.459 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+
