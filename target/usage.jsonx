@@ -1,0 +1,74 @@
+[
+  {
+    "source": "^User is home pageiiv$",
+    "steps": [
+      {
+        "name": "User is home pageiiv",
+        "aggregatedDurations": {
+          "median": 19.8870865,
+          "average": 19.8870865
+        },
+        "durations": [
+          {
+            "duration": 19.8870865,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:5"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user click on the Free PPts under free stuffiiv$",
+    "steps": [
+      {
+        "name": "user click on the Free PPts under free stuffiiv",
+        "aggregatedDurations": {
+          "median": 7.0112193,
+          "average": 7.0112193
+        },
+        "durations": [
+          {
+            "duration": 7.0112193,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:6"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "User try to download the free pptsiiv$",
+    "steps": [
+      {
+        "name": "User try to download the free pptsiiv",
+        "aggregatedDurations": {
+          "median": 13.2353499,
+          "average": 13.2353499
+        },
+        "durations": [
+          {
+            "duration": 13.2353499,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "user is on home page page and click on google buttoniiv$",
+    "steps": [
+      {
+        "name": "user is on home page page and click on google buttoniiv",
+        "aggregatedDurations": {
+          "median": 5.0997363,
+          "average": 5.0997363
+        },
+        "durations": [
+          {
+            "duration": 5.0997363,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:8"
+          }
+        ]
+      }
+    ]
+  }
+]

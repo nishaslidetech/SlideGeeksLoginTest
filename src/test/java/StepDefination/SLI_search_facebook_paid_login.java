@@ -96,9 +96,9 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 		Thread.sleep(5000);
 		WebElement search_field = wait
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='search-input']")));
-		Thread.sleep(2000);
-		search_field.sendKeys("software");
 		Thread.sleep(3000);
+		search_field.sendKeys("software");
+		Thread.sleep(5000);
 	}
 
 	@Then("user selects and download the PPT_vii$")
