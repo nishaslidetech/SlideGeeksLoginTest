@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -41,10 +42,12 @@ public class Normal_paid_login extends BaseClass {
 
 			System.out.println("user should be on the login page + " + driver.getCurrentUrl());
 			Thread.sleep(3000);
-			WebElement select_Ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
-			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
-			select_Ppt.click();
+
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
+
 			Thread.sleep(3000);
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));

@@ -3,7 +3,7 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2023-01-28T16:30:07.721Z",
+        "start_timestamp": "2023-02-02T06:59:27.853Z",
         "line": 4,
         "name": "SLI search facebook login test",
         "description": "",
@@ -11,7 +11,7 @@
         "after": [
           {
             "result": {
-              "duration": 2993100,
+              "duration": 1993700,
               "status": "passed"
             },
             "match": {
@@ -24,7 +24,7 @@
         "steps": [
           {
             "result": {
-              "duration": 21054438200,
+              "duration": 18293081500,
               "status": "passed"
             },
             "line": 5,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 6141153900,
+              "duration": 6135190300,
               "status": "passed"
             },
             "line": 6,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 14340645300,
+              "duration": 14340636000,
               "status": "passed"
             },
             "line": 7,
@@ -60,7 +60,7 @@
           },
           {
             "result": {
-              "duration": 12751756100,
+              "duration": 11767690000,
               "status": "passed"
             },
             "line": 8,
@@ -72,7 +72,7 @@
           },
           {
             "result": {
-              "duration": 4091420500,
+              "duration": 8221424800,
               "status": "passed"
             },
             "line": 9,
@@ -84,7 +84,7 @@
           },
           {
             "result": {
-              "duration": 6239823500,
+              "duration": 4062805000,
               "status": "passed"
             },
             "line": 10,

@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -39,10 +40,10 @@ public class Facebook_existing_paid_login extends BaseClass {
 
 		try {
 			Thread.sleep(4000);
-			WebElement select_Ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[2]/div[1]/div[1]/div[1]/a[1]/div[1]/img[1]")));
-			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
-			select_Ppt.click();
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+
+			select_Ppt.get(1).click();
 			Thread.sleep(3000);
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
@@ -117,8 +118,8 @@ public class Facebook_existing_paid_login extends BaseClass {
 					if (!driver.findElements(By.xpath("//input[@value='Log in']")).isEmpty()) {
 						driver.findElement(By.xpath("//input[@value='Log in']")).click();
 					} else {
-						WebElement fb_login = wait.until(
-								ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']")));
+						WebElement fb_login = wait
+								.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']")));
 
 						fb_login.click();
 						Thread.sleep(3000);
@@ -137,7 +138,6 @@ public class Facebook_existing_paid_login extends BaseClass {
 	@Then("user downloads the PPTi$")
 	public void user_downloads_the_ppti() throws Throwable {
 		Thread.sleep(7000);
-		// driver.get("https://www.slidegeeks.com/business/product/emerging-marketplace-strategies-growth-ppt-powerpoint-presentation-complete-deck");
 		WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 		js.executeScript("arguments[0].scrollIntoView();", download_Ppt);
 		download_Ppt.click();

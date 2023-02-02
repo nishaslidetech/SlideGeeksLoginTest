@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Project Name</td>
                           <td>1</td>
-                        <td>26 Dec 2022, 17:25</td>
+                        <td>01 Feb 2023, 14:25</td>
           </tr>
         </tbody>
       </table>
@@ -126,13 +126,13 @@ $(document).ready(function() {
                     <td >0</td>
           <td  class="failed"    >1</td>
           <td class="total">1</td>
-          <td >0</td>
+          <td      class="passed"    >3</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >7</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">8</td>
-          <td class="duration" data-value="2021879000">2s 021ms</td>
+          <td class="duration" data-value="88438654200">1m 28s 438ms</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -195,11 +195,74 @@ $(document).ready(function() {
   <div id="steps-2" class="inner-level collapse collapsable-details  in ">
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">User is home page_viii</span>
   
-  <span class="lead-duration duration">2s 019ms</span>
+  <span class="lead-duration duration">15s 677ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">Enter keyword in search field_viii</span>
+  
+  <span class="lead-duration duration">6s 314ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user will clicks on the sign in with Google button_viii</span>
+  
+  <span class="lead-duration duration">3s 124ms</span>
+
+  </div>
+
+        
+
+
+        
+        
+
+        
+
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief failed">
+  <span class="keyword indention">And</span>
+  <span class="name">user enters the username and password_viii</span>
+  
+  <span class="lead-duration duration">1m 3s 321ms</span>
 
   </div>
 
@@ -211,15 +274,21 @@ $(document).ready(function() {
           <a>Error message</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.125)
+        <pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: /html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input (tried for 50 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at StepDefination.SLI_search_google_paid_login.user_enters_the_username_and_password_viii(SLI_search_google_paid_login.java:90)
+	at ✽.user enters the username and password_viii(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_google_paid_login.feature:8)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input"}
+  (Session info: chrome=109.0.5414.120)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
+System info: host: 'SLIDEQA2', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13676d60493c474932da781b82669cf4
-	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63564}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc84b370ea17f9c7743cfb4a26963b32
+*** Element info: {Using=xpath, value=/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input}
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -229,77 +298,64 @@ Session ID: 13676d60493c474932da781b82669cf4
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at Setupclass.BaseClass.ClearGoggleCache(BaseClass.java:131)
-	at StepDefination.SLI_search_google_paid_login.user_is_home_page_viii(SLI_search_google_paid_login.java:24)
-	at ✽.User is home page_viii(file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/SLI_search_google_paid_login.feature:5)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:641)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:638)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	at StepDefination.SLI_search_google_paid_login.user_enters_the_username_and_password_viii(SLI_search_google_paid_login.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:64)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:104)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:73)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:151)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:200)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:90)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:235)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:364)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:272)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:237)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
 </pre>
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">Enter keyword in search field_viii</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user will clicks on the sign in with Google button_viii</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
-
-
-        
-        
-
-        
-
-        
-
-      </div>
-          <div class="step">
-        
-<div class="brief skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user enters the username and password_viii</span>
-  
-  <span class="lead-duration duration">000ms</span>
-
-  </div>
-
-        
 
 
         
@@ -379,7 +435,7 @@ Session ID: 13676d60493c474932da781b82669cf4
   <span class="keyword indention">Then</span>
   <span class="name">user clicks on the Logout page_viii</span>
   
-  <span class="lead-duration duration">001ms</span>
+  <span class="lead-duration duration">000ms</span>
 
   </div>
 
@@ -400,9 +456,9 @@ Session ID: 13676d60493c474932da781b82669cf4
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsable-control" data-target="#after-4">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
   
@@ -412,52 +468,31 @@ Session ID: 13676d60493c474932da781b82669cf4
 
     </div>
 
-    <div id="after-4" class="inner-level collapse collapsable-details  in ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">StepDefination.TakeImageStep.tearDown(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">003ms</span>
+  <span class="lead-duration duration">316ms</span>
 
           </div>
 
                       
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-5">
-          <a>Error message</a>
-      </div>
-      <div id="msg-5" class="collapse collapsable-details">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=108.0.5359.125)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'SLIDEQA2', ip: '192.168.1.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\SLIDEQ~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 13676d60493c474932da781b82669cf4
-	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at StepDefination.TakeImageStep.tearDown(TakeImageStep.java:21)
-</pre>
-      </div>
+          
+          
+  <div class="embeddings inner-level">
+                <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding_embedding_-1030109786" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-1030109786.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
+    </div>
+    <div id="embedding_embedding_-1030109786" class="collapse collapsable-detail">
+      <span class="embedding-content"><img src="embeddings/embedding_-1030109786.png"></span>
     </div>
   </div>
-
-          
-          
+        </div>
 
         </div>
           </div>

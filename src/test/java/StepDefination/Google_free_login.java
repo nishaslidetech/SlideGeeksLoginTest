@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -42,10 +43,12 @@ public class Google_free_login extends BaseClass {
 	public void user_try_to_download_the_free_pptsiiv() throws Throwable {
 
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//span[contains(text(),'Download Free Semi Circular Free PowerPoint Templa')]")));
-			js.executeScript("arguments[0].scrollIntoView();", select_ppt);
-			select_ppt.click();
+
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
+
 			Thread.sleep(3000);
 			WebElement download_ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));

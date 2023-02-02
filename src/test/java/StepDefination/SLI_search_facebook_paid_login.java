@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -98,9 +99,10 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 	@Then("user selects and download the PPT_vii$")
 	public void user_selects_and_download_the_ppt() throws InterruptedException {
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[@class='productList']//div[1]//a[1]//div[1]//img[1]")));
-			js.executeScript("arguments[0].click();", select_ppt);
+
+			List<WebElement> select_Ppt = driver.findElements(By.xpath("//div[@class = 'productList']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);

@@ -3,6 +3,7 @@ package StepDefination;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -40,7 +41,7 @@ public class SLI_search_google_paid_login extends BaseClass {
 			Thread.sleep(3000);
 			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			Thread.sleep(3000);
-		
+
 			boolean pop_up_Value = driver.findElement(By.xpath("//ul[@id='sli_autocomplete']")).isDisplayed();
 			System.out.println("pop-up is displayed  " + pop_up_Value);
 
@@ -79,16 +80,14 @@ public class SLI_search_google_paid_login extends BaseClass {
 				driver.switchTo().window(popupWindowHandle);
 				driver.manage().window().maximize();
 
-				
-
 				if (!driver.findElements(By.xpath("//div[@class='BHzsHc']")).isEmpty()) {
 					WebElement another_btn = BaseClass
 							.elementToBeClickable(By.xpath("//div[text()='Use another account']"));
 					another_btn.click();
 				}
 
-				WebElement g_email = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div/div[1]/div/div[1]/input")));
+				WebElement g_email = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='identifierId']")));
 
 				g_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(3000);
@@ -100,8 +99,8 @@ public class SLI_search_google_paid_login extends BaseClass {
 
 				Thread.sleep(3000);
 
-				WebElement g_pass = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-						"/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[1]/div/form/span/section/div/div/div[1]/div[1]/div/div/div/div/div[1]/div/div[1]/input")));
+				WebElement g_pass = wait
+						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@name='password']")));
 
 				g_pass.sendKeys("Himanshi@123");
 
@@ -147,9 +146,9 @@ public class SLI_search_google_paid_login extends BaseClass {
 	@Then("user selects and download the PPT_viii$")
 	public void user_selects_and_download_the_ppt_viii() throws Throwable {
 		try {
-			WebElement select_ppt = wait.until(ExpectedConditions
-					.elementToBeClickable(By.xpath("//div[@class='productList']//div[1]//a[1]//div[1]//img[1]")));
-			select_ppt.click();
+
+			List<WebElement> select_Ppt = driver.findElements(By.xpath("//div[@class = 'productList']//a//img"));
+			select_Ppt.get(1).click();
 			Thread.sleep(3000);
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));

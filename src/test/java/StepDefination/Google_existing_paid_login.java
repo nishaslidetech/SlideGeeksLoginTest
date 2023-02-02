@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -38,10 +39,11 @@ public class Google_existing_paid_login extends BaseClass {
 	@Then("User try to download the pptiii$")
 	public void user_try_to_download_the_pptiii() throws Throwable {
 		try {
-			WebElement select_Ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Strategy Evolution Template Ppt PowerPoint Presentation Introduction']")));
-			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
-			select_Ppt.click();
+
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
 
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[@id='download_product']")));
@@ -141,10 +143,11 @@ public class Google_existing_paid_login extends BaseClass {
 		most_popular_Ppts.click();
 
 		try {
-			WebElement select_Ppt = wait.until(ExpectedConditions.elementToBeClickable(
-					By.xpath("//img[@title='Strategy Evolution Template Ppt PowerPoint Presentation Introduction']")));
-			js.executeScript("arguments[0].scrollIntoView();", select_Ppt);
-			select_Ppt.click();
+
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
 
 			WebElement download_Ppt = BaseClass.elementToBeClickable(By.linkText("Download this Presentation"));
 			js.executeScript("arguments[0].scrollIntoView();", download_Ppt);

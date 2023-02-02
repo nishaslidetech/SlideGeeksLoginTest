@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="64.905">
-    <testcase classname="SLI search facebook login" name="SLI search facebook login test" time="64.703">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="63.117">
+    <testcase classname="SLI search facebook login" name="SLI search facebook login test" time="62.904">
         <system-out><![CDATA[Given User is home page_vii.................................................passed
 Then user will clicks on the sign in with Facebook button_vii...............passed
 And user enters the username and password_vii...............................passed

@@ -1,5 +1,6 @@
 package StepDefination;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -72,8 +73,8 @@ public class Facebook_Paid_Login extends BaseClass {
 					if (!driver.findElements(By.xpath("//input[@value='Log in']")).isEmpty()) {
 						driver.findElement(By.xpath("//input[@value='Log in']")).click();
 					} else {
-						WebElement fb_login = wait.until(
-								ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']")));
+						WebElement fb_login = wait
+								.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@value='Log In']")));
 
 						fb_login.click();
 						Thread.sleep(2000);
@@ -99,11 +100,12 @@ public class Facebook_Paid_Login extends BaseClass {
 			WebElement most_popular_Ppts = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("MOST POPULAR")));
 			most_popular_Ppts.click();
+			Thread.sleep(3000);
 
-			WebElement select_PPt = wait.until(ExpectedConditions.elementToBeClickable(By.xpath(
-					"//div[@class='box-top']//img[@title='Strategy Evolution Template Ppt PowerPoint Presentation Introduction']")));
-			js.executeScript("arguments[0].scrollIntoView();", select_PPt);
-			select_PPt.click();
+			List<WebElement> select_Ppt = driver
+					.findElements(By.xpath("//div[@class = 'product-wrapper-row']//a//img"));
+			select_Ppt.get(1).click();
+			Thread.sleep(3000);
 
 			WebElement download_Ppt = wait
 					.until(ExpectedConditions.elementToBeClickable(By.linkText("Download this Presentation")));
