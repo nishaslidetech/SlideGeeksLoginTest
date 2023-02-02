@@ -68,6 +68,11 @@ public class SLI_search_facebook_paid_login extends BaseClass {
 				try {
 					if (!driver.findElements(By.xpath("//input[@value='Log in']")).isEmpty()) {
 						driver.findElement(By.xpath("//input[@value='Log in']")).click();
+					}
+
+					else if (!driver.findElements(By.xpath("//input[@value='Log In']")).isEmpty()) {
+						driver.findElement(By.xpath("//input[@value='Log In']")).click();
+
 					} else {
 						WebElement fb_login = wait.until(
 								ExpectedConditions.elementToBeClickable(By.xpath("//button[@id='loginbutton']")));
