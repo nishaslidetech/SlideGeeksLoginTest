@@ -61,13 +61,13 @@ public class Facebook_Paid_Login extends BaseClass {
 				WebElement fb_email = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='email']")));
 				fb_email.clear();
-				fb_email.sendKeys("sumit.kumar@slidetech.in");
+				fb_email.sendKeys("slidetech.qa@gmail.com");
 				Thread.sleep(3000);
 				WebElement fb_pass = wait
 						.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='pass']")));
 
 				fb_pass.clear();
-				fb_pass.sendKeys("redhat2090");
+				fb_pass.sendKeys("himanshi@123");
 				Thread.sleep(3000);
 				try {
 					if (!driver.findElements(By.xpath("//input[@value='Log in']")).isEmpty()) {
@@ -95,6 +95,7 @@ public class Facebook_Paid_Login extends BaseClass {
 	public void user_downloads_the_popular_ppiv() throws InterruptedException {
 		try {
 
+			Thread.sleep(2000);
 			System.out.println("user will download the ppt");
 
 			WebElement most_popular_Ppts = wait

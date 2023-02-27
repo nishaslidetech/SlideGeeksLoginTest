@@ -1,71 +1,53 @@
 [
   {
-    "source": "^User is home pageiiv$",
+    "source": "Enter the url",
     "steps": [
       {
-        "name": "User is home pageiiv",
+        "name": "Enter the url",
         "aggregatedDurations": {
-          "median": 19.8870865,
-          "average": 19.8870865
+          "median": 25.7728785,
+          "average": 25.7728785
         },
         "durations": [
           {
-            "duration": 19.8870865,
-            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:5"
+            "duration": 25.7728785,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_paid_Login.feature:6"
           }
         ]
       }
     ]
   },
   {
-    "source": "user click on the Free PPts under free stuffiiv$",
+    "source": "user enters the Username and passwordiv",
     "steps": [
       {
-        "name": "user click on the Free PPts under free stuffiiv",
+        "name": "user enters the Username and passwordiv",
         "aggregatedDurations": {
-          "median": 7.0112193,
-          "average": 7.0112193
+          "median": 16.4420443,
+          "average": 16.4420443
         },
         "durations": [
           {
-            "duration": 7.0112193,
-            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:6"
+            "duration": 16.4420443,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_paid_Login.feature:7"
           }
         ]
       }
     ]
   },
   {
-    "source": "User try to download the free pptsiiv$",
+    "source": "user downloads the popular PPTiv",
     "steps": [
       {
-        "name": "User try to download the free pptsiiv",
+        "name": "user downloads the popular PPTiv",
         "aggregatedDurations": {
-          "median": 13.2353499,
-          "average": 13.2353499
+          "median": 9.8518748,
+          "average": 9.8518748
         },
         "durations": [
           {
-            "duration": 13.2353499,
-            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:7"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "source": "user is on home page page and click on google buttoniiv$",
-    "steps": [
-      {
-        "name": "user is on home page page and click on google buttoniiv",
-        "aggregatedDurations": {
-          "median": 5.0997363,
-          "average": 5.0997363
-        },
-        "durations": [
-          {
-            "duration": 5.0997363,
-            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Google_free_login.feature:8"
+            "duration": 9.8518748,
+            "location": "file:///D:/Selenium%20Live%20Projects/slidegeeksLoginTest/./src/test/java/Features/Facebook_paid_Login.feature:8"
           }
         ]
       }
